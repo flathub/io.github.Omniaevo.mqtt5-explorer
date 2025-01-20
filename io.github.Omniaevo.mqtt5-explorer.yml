@@ -13,6 +13,7 @@ finish-args:
   - --socket=x11
   - --share=network
   - --device=dri
+  - --filesystem=home
 build-options:
   append-path: /usr/lib/sdk/node22/bin
   env:
@@ -34,8 +35,8 @@ modules:
       - install -Dm755 -t /app/bin/ mqtt5-explorer.sh
     sources:
       - type: archive
-        url: https://github.com/Omniaevo/mqtt5-explorer/releases/download/v1.17.0/io.github.Omniaevo.mqtt5-explorer.tar.gz
-        sha256: 85a837cd0dfee9eab1ccf771989eb5342a415479da75ddff29af03b5ebb3e65d
+        url: https://github.com/Omniaevo/mqtt5-explorer/releases/download/v1.17.1/io.github.Omniaevo.mqtt5-explorer.tar.gz
+        sha256: 76e34d37f3c24760ae328d2af312d5af05359ec2ac6ce894eec0de686636c04a
         dest-filename: io.github.Omniaevo.mqtt5-explorer.tar.gz
       # Wrapper to launch the app
       - type: script
