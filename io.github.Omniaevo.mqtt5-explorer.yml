@@ -10,7 +10,8 @@ command: mqtt5-explorer.sh
 separate-locales: false
 finish-args:
   - --share=ipc
-  - --socket=x11
+  - --socket=fallback-x11
+  - --socket=wayland
   - --share=network
   - --device=dri
   - --filesystem=home
@@ -35,8 +36,8 @@ modules:
       - install -Dm755 -t /app/bin/ mqtt5-explorer.sh
     sources:
       - type: archive
-        url: https://github.com/Omniaevo/mqtt5-explorer/releases/download/v1.18.0/io.github.Omniaevo.mqtt5-explorer.tar.gz
-        sha256: 70b860164d5189911f3f6c995fa0fdeda5ea3b4bf356d83c96ee81c274d4f988
+        url: https://github.com/Omniaevo/mqtt5-explorer/releases/download/v1.19.0/io.github.Omniaevo.mqtt5-explorer.tar.gz
+        sha256: 434dbce2b8103abf739188cbf62d7c714818f83c3223edfef6803c65186ab272
         dest-filename: io.github.Omniaevo.mqtt5-explorer.tar.gz
       # Wrapper to launch the app
       - type: script
