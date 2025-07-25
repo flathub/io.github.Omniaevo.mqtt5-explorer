@@ -15,6 +15,7 @@ finish-args:
   - --share=network
   - --device=dri
   - --filesystem=home
+  - --talk-name=org.kde.StatusNotifierWatcher # Tray icon
   - --env=ELECTRON_TRASH=gio
   - --env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons
 build-options:
