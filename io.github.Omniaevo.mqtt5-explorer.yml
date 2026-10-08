@@ -1,9 +1,9 @@
 app-id: io.github.Omniaevo.mqtt5-explorer
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '24.08'
+base-version: '26.08'
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node22
 command: mqtt5-explorer.sh
@@ -39,8 +39,8 @@ modules:
       - install -Dm755 -t /app/bin/ mqtt5-explorer.sh
     sources:
       - type: archive
-        url: https://github.com/Omniaevo/mqtt5-explorer/releases/download/v1.19.1/io.github.Omniaevo.mqtt5-explorer.tar.gz
-        sha256: 7e00e3596cace6e60dee900e034bc7d9c2849babd4ae76e31d000910920b1753
+        url: https://github.com/Omniaevo/mqtt5-explorer/releases/download/v2.0.0/io.github.Omniaevo.mqtt5-explorer.tar.gz
+        sha256: aecb6f1142c271d842d75262a5a45ab8d3529c7f91a5c17146f53737629fbb47
         dest-filename: io.github.Omniaevo.mqtt5-explorer.tar.gz
       # Wrapper to launch the app
       - type: script
