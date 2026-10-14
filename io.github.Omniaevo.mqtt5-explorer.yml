@@ -39,8 +39,8 @@ modules:
       - install -Dm755 -t /app/bin/ mqtt5-explorer.sh
     sources:
       - type: archive
-        url: https://github.com/Omniaevo/mqtt5-explorer/releases/download/v2.0.0/io.github.Omniaevo.mqtt5-explorer.tar.gz
-        sha256: aecb6f1142c271d842d75262a5a45ab8d3529c7f91a5c17146f53737629fbb47
+        url: https://github.com/Omniaevo/mqtt5-explorer/releases/download/v2.0.1/io.github.Omniaevo.mqtt5-explorer.tar.gz
+        sha256: 90e2ad5396a4e5a7c3f8f19bb6fb65fca290f9d1e10e85b57e6e904497152ea2
         dest-filename: io.github.Omniaevo.mqtt5-explorer.tar.gz
       # Wrapper to launch the app
       - type: script
